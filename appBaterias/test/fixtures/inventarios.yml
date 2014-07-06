@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  codigoProducto: MyString
+  codigoProveedor: 1
+  descripcion: MyString
+  cantidad: 1
+  precioCosto: 1.5
+  utilidad: 1.5
+  impuesto: 1.5
+  precioVenta1: 1.5
+  precioVenta2: 1.5
+
+two:
+  codigoProducto: MyString
+  codigoProveedor: 1
+  descripcion: MyString
+  cantidad: 1
+  precioCosto: 1.5
+  utilidad: 1.5
+  impuesto: 1.5
+  precioVenta1: 1.5
+  precioVenta2: 1.5

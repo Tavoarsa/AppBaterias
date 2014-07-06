@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cedula:</strong>
+  <%= @proveedor.cedulaProveedor %>
+</p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @proveedor.nombreProveedor %>
+</p>
+
+<p>
+  <strong>Contacto:</strong>
+  <%= @proveedor.nombreContacto %>
+</p>
+
+<p>
+  <strong>Telefono1:</strong>
+  <%= @proveedor.telefono1 %>
+</p>
+
+<p>
+  <strong>Telefono2:</strong>
+  <%= @proveedor.telefono2 %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @proveedor.email %>
+</p>
+
+<p>
+  <strong>Maximo Credito:</strong>
+  <%= @proveedor.maximoCredito %>
+</p>
+
+<%= link_to 'Editar', edit_proveedor_path(@proveedor) %> |
+<%= link_to 'Atras', proveedors_path %>

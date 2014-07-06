@@ -1,0 +1,53 @@
+<%= form_for(@inventario) do |f| %>
+  <% if @inventario.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@inventario.errors.count, "error") %> prohibited this inventario from being saved:</h2>
+
+      <ul>
+      <% @inventario.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :codigoProducto %><br>
+    <%= f.text_field :codigoProducto %>
+  </div>
+  <div class="field">
+    <%= f.label :codigoProveedor %><br>
+    <%= f.number_field :codigoProveedor %>
+  </div>
+  <div class="field">
+    <%= f.label :descripcion %><br>
+    <%= f.text_field :descripcion %>
+  </div>
+  <div class="field">
+    <%= f.label :cantidad %><br>
+    <%= f.number_field :cantidad %>
+  </div>
+  <div class="field">
+    <%= f.label :precioCosto %><br>
+    <%= f.text_field :precioCosto %>
+  </div>
+  <div class="field">
+    <%= f.label :utilidad %><br>
+    <%= f.text_field :utilidad %>
+  </div>
+  <div class="field">
+    <%= f.label :impuesto %><br>
+    <%= f.text_field :impuesto %>
+  </div>
+  <div class="field">
+    <%= f.label :precioVenta1 %><br>
+    <%= f.text_field :precioVenta1 %>
+  </div>
+  <div class="field">
+    <%= f.label :precioVenta2 %><br>
+    <%= f.text_field :precioVenta2 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

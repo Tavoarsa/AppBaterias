@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cedulaProveedor: 1
+  nombreProveedor: MyString
+  nombreContacto: MyString
+  telefono1: 1
+  telefono2: 1
+  email: MyString
+  maximoCredito: 1.5
+
+two:
+  cedulaProveedor: 1
+  nombreProveedor: MyString
+  nombreContacto: MyString
+  telefono1: 1
+  telefono2: 1
+  email: MyString
+  maximoCredito: 1.5

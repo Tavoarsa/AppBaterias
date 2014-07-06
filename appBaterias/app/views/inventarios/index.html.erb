@@ -1,0 +1,41 @@
+<h1>Lista de Articulos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Codigo Producto</th>
+      <th>Codigo proveedor</th>
+      <th>Descripcion</th>
+      <th>Cantidad</th>
+      <th>Precio Costo</th>
+      <th>Utilidad</th>
+      <th>Impuesto</th>
+      <th>Precio Venta1</th>
+      <th>Precio Venta2</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @inventarios.each do |inventario| %>
+      <tr>
+        <td><%= inventario.codigoProducto %></td>
+        <td><%= inventario.codigoProveedor %></td>
+        <td><%= inventario.descripcion %></td>
+        <td><%= inventario.cantidad %></td>
+        <td><%= inventario.precioCosto %></td>
+        <td><%= inventario.utilidad %></td>
+        <td><%= inventario.impuesto %></td>
+        <td><%= inventario.precioVenta1 %></td>
+        <td><%= inventario.precioVenta2 %></td>
+        <td><%= link_to 'Ver Inventario', inventario %></td>
+        <td><%= link_to 'Editar Articulo', edit_inventario_path(inventario) %></td>
+        <td><%= link_to 'Eliminar Articulo', inventario, method: :delete, data: { confirm: 'Esta seguro?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nuevo Articulo', new_inventario_path %>

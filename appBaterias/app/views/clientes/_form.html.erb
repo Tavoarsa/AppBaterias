@@ -1,0 +1,57 @@
+<%= form_for(@cliente) do |f| %>
+  <% if @cliente.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cliente.errors.count, "error") %> prohibited this cliente from being saved:</h2>
+
+      <ul>
+      <% @cliente.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :cedula %><br>
+    <%= f.number_field :cedula %>
+  </div>
+  <div class="field">
+    <%= f.label :nombreCliente %><br>
+    <%= f.text_field :nombreCliente %>
+  </div>
+  <div class="field">
+    <%= f.label :direccion %><br>
+    <%= f.text_field :direccion %>
+  </div>
+  <div class="field">
+    <%= f.label :telefono1 %><br>
+    <%= f.number_field :telefono1 %>
+  </div>
+  <div class="field">
+    <%= f.label :telefono2 %><br>
+    <%= f.number_field :telefono2 %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :tipoCliente %><br>
+    <%= f.text_field :tipoCliente %>
+  </div>
+  <div class="field">
+    <%= f.label :maximoCredito %><br>
+    <%= f.text_field :maximoCredito %>
+  </div>
+  <div class="field">
+    <%= f.label :interes %><br>
+    <%= f.text_field :interes %>
+  </div>
+  <div class="field">
+    <%= f.label :comentarios %><br>
+    <%= f.text_field :comentarios %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
